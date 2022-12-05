@@ -1,10 +1,14 @@
-import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
+import Form from './Form';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>Hello World!</h1>
+        <Home />
+        <Form />
       </div>
     </div>
   );
