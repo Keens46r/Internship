@@ -7,8 +7,8 @@ const Home = () => {
         const data = await response.json();
         const { setup, punchline } = data;
         
-        document.getElementById('setup').textContent = setup;
-        document.getElementById('punchline').textContent = punchline;
+        document.getElementById('setUp').textContent = setup;
+        document.getElementById('punchLine').textContent = punchline;
    
     }
 
@@ -20,8 +20,8 @@ const Home = () => {
         <div className="home">
             <h3>{title}</h3>
             <p>
-                Joke: <span  class="joke" id="setup"></span><br/>
-                Answer: <span class="joke" id="punchline"></span><br/>
+                Joke: <span className="joke" id="setUp"></span><br/>
+                Answer: <span className="joke" id="punchLine"></span><br/>
             </p>
         </div>
     );
