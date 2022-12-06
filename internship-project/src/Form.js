@@ -27,20 +27,23 @@ const Form = () => {
         email: e.target.value
         });
     }
-
     return ( 
     <>
-    <label> First name:
-        <input value={person.firstName} onChange={handleFirstNameChange}/>
-    </label>
+    <div>
+        <label>First name: </label><br/>
+        <input value={person.firstName} onChange={handleFirstNameChange}/><br/>
+    </div>
 
-    <label> Last name:
+    <div>
+        <label>Last name:</label><br/>
         <input value={person.lastName} onChange={handleLastNameChange}/>
-    </label>
+    </div> 
 
-    <label>Email: 
+    <div>
+        <label>Email: </label><br/>
         <input value={person.email} onChange={handleEmailChange}/>
-    </label>
+    </div>
+    
     <p>
         {person.firstName}{' '}
         {person.lastName}{' '}
