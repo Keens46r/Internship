@@ -12,12 +12,10 @@ const Home = () => {
    
     }
 
-    //Page reloads to fetch new joke after 9 seconds
-    setTimeout(function(){
-        window.location.reload(1);
-     }, 9000);
-
     getData();
+
+    //Fetch random joke evrery 15 seconds
+    setInterval(getData, 15000);
     return (  
         <div className="home">
             <h3>{title}</h3>
